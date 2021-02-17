@@ -1,0 +1,15 @@
+
+.tout__voir,
+.tout__voir:link,
+.tout__voir:visited {
+    padding: .25em 1rem;
+    text-transform: lowercase;
+    font-weight: 500;
+    background-color: var(--white);
+    border-radius: 3px;
+    color: var(--green);
+}
+
+.b {
+    border: 2px solid var(--dark);
+}

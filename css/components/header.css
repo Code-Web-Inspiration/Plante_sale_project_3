@@ -1,0 +1,114 @@
+.header {
+    background: url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center / cover no-repeat, linear-gradient(to right, #000, #111);
+    z-index: 10000;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 6px var(--dark);
+    background-color: var(--dark);
+    color: var(--white);
+    z-index: 10000;
+}
+
+.nav__content {
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+
+
+.nav__logo {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    transform: translateY(-50%);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.header__navbar {
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+.nav__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:first-child {
+    margin-left: auto;
+}
+
+.nav__link {
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: .5em 1.0rem;
+    white-space: nowrap;
+    transition: .3s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__link:active {
+    color: var(--green);
+}
+
+
+.header__contents {
+    padding-top: 80px;
+    padding-left: 50px;
+    height: calc(100vh - 30vh);
+}
+
+.header__title {
+    margin-top: 100px;
+    font-size: 4em;
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.header__baseline {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: var(--white);
+}
+
+.header__btn,
+.header__btn:link,
+.header__btn:visited {
+    font-size: .8em;
+    font-weight: 600;
+    padding: 1rem 3em;
+    background-color: rgba(17, 17, 17, .67);
+    color: var(--white);
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: ease .3s;
+}
+
+.header__btn:hover,
+.header__btn:active {
+    color: var(--green);
+}
+
+.header-top.stiky {
+    position: fixed;
+    top: 0;
+    transition: var(--trans-1);
+    z-index: 10000;
+}
+
+@media only screen and (max-width: 550px){
+    
+    .header__title {
+        font-size: 3em;
+    }
+}

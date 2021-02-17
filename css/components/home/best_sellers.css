@@ -1,0 +1,122 @@
+.best__sellers {
+    padding-top: 150px;
+}
+
+.best__sellers__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+
+.best__sellers__contents {
+    display: grid;
+    grid-template-rows: minmax(400px, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "card__1 card__2 card__3 card__4"
+        "card__5 card__6 card__7 card__8"
+    ; 
+    grid-column-gap: 2rem;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* .best__sellers__contents::-webkit-scrollbar {
+    display: none;
+}
+
+.best__sellers__contents {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
+
+
+.best__sellers__card {
+    position: relative;
+    height: 100%;
+}
+
+.best__sellers__card:nth-child(1) {
+    grid-area: card__1;
+}
+
+.best__sellers__card:nth-child(2) {
+    grid-area: card__2;
+}
+
+.best__sellers__card:nth-child(3) {
+    grid-area: card__3;
+}
+
+.best__sellers__card:nth-child(4) {
+    grid-area: card__4;
+}
+
+.best__sellers__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 250px;
+    width: 100%;
+    transition: .3s ease;
+    object-fit: cover;
+}
+
+.best__sellers__img:hover {
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+.best__sellers__card__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.best__sellers__card__name {
+    font-size: 1em;
+    color: var(--green);
+    padding: .25rem 0;
+}
+
+.best__sellers__card__price {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.best__sellers__card__cart {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    padding: .5em 1rem;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px){
+    .best__sellers__contents {
+        display: grid;
+        grid-template-rows: repeat(2, minmax(400px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card__1 card__2"
+            "card__3 card__4"
+            "card__5 card__6" 
+            "card__7 card__8"
+        ; 
+        grid-gap: 2rem;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+

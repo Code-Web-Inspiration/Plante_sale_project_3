@@ -1,0 +1,59 @@
+/* --- BASE STYLE --- */
+
+:root {
+    --montserrat: 'Montserrat', sans-serif;;
+    --trans-03: .3s ease;
+    --dark: #111;
+    --green: #61b15a;
+    --white: #e6e6e6
+}
+
+*, *::before, *::after, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+}
+
+html, body {
+    color: var(--dark);
+    text-rendering: optimizeLegibility;
+}
+
+section, header, footer {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+ul, li {
+    font-family: var(--montserrat);
+}
+
+ul {
+    position: relative;
+    list-style: none;
+}
+
+a, a:link, a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-link:link {
+    padding: .5em 1em;
+    border-radius: 3px;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: inherit;
+    transition: var(--trans-03);
+}
+.contact-link:hover,
+.contact-link:active,
+.contact-link.is-active {
+    background-color: var(--green);
+}
+

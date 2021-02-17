@@ -1,0 +1,20 @@
+/* --- MAIN FILE CSS --- */
+
+/* --- POLICE --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+/* --- BASE --- */
+@import './_global.css';
+
+/* --- COMPONENT --- */
+@import './components/_layout.css';
+@import './components/_component.css';
+
+/* --- MODULE --- */
+@import './components/header.css';
+@import './components/home/banner_info.css';
+@import './components/home/best_sellers.css';
+@import './components/home/our_plants.css';
+@import './components/home/blog.css';
+@import './components/home/contact.css';
+@import './components/footer.css';
